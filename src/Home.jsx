@@ -1,9 +1,9 @@
 import React from 'react'
 import { } from "module";
-
+import '../src/Styles/styles.css'
 export const Home = () => {
     return (
-        <section className="hero is-info is-large custom-hero" >
+        <section className="hero is-large custom-hero" >
 
             <div className="hero-body">
                 <div className="container has-text-centered">
