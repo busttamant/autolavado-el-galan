@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import img from "../assets/favicon.png"
 export const NavBar = () => {
     return (
         <div className="hero-head ">
@@ -8,7 +8,7 @@ export const NavBar = () => {
                 <div className="container">
                     <div className="navbar-brand">
                         <Link to="/" className="navbar-item">
-                            <img width="60" height="80" src="/src/assets/favicon.png" />
+                            <img width="60" height="80" src={img} />
                         </Link>
                         <p className="title has-text-centered  has-text-white" style={{ marginBottom: "0", lineHeight: "inherit", display: "flex", flexDirection: "column", justifyContent: "center" }}>Autolavado El Galan</p>
 
