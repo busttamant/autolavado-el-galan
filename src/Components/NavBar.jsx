@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
     return (
-        <div className="hero-head  ">
-            <nav className="navbar ">
+        <div className="hero-head ">
+            <nav className="navbar has-background-black-ter">
                 <div className="container">
                     <div className="navbar-brand">
                         <Link to="/" className="navbar-item">
-                            <img width="40" height="100" src="https://img.icons8.com/external-filled-outline-mangsaabguru-/64/external-car-housework-and-hobby-filled-filled-outline-mangsaabguru-.png" alt="external-car-housework-and-hobby-filled-filled-outline-mangsaabguru-" />
+                            <img width="60" height="80" src="/src/assets/favicon.png" />
                         </Link>
-                        <p className="title" style={{ marginBottom: "0", lineHeight: "inherit" }}>Autolavado El Galan</p>
+                        <p className="title has-text-centered  has-text-white" style={{ marginBottom: "0", lineHeight: "inherit", display: "flex", flexDirection: "column", justifyContent: "center" }}>Autolavado El Galan</p>
 
                         <span className="navbar-burger" data-target="navbarMenuHeroB">
                             <span></span>
@@ -20,11 +20,11 @@ export const NavBar = () => {
                         </span>
                     </div>
                     <div id="navbarMenuHeroB" className="navbar-menu">
-                        <div className="navbar-end">
-                            <Link to="/" className="navbar-item">Inicio</Link>
-                            <Link to="/servicios" className="navbar-item">Servicios</Link>
-                            <Link to="/contacto" className="navbar-item">Contacto</Link>
-                            <Link to="/sobreNosotros" className="navbar-item">Sobre nosotros</Link>
+                        <div className="navbar-end ">
+                            <Link to="/" className="navbar-item has-text-white">Inicio</Link>
+                            <Link to="/servicios" className="navbar-item has-text-white">Servicios</Link>
+                            <Link to="/contacto" className="navbar-item has-text-white">Contacto</Link>
+                            <Link to="/sobreNosotros" className="navbar-item has-text-white">Sobre nosotros</Link>
 
                         </div>
                     </div>

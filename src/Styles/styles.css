@@ -1,5 +1,12 @@
 .custom-hero {
-    background-image: url('https://img.freepik.com/foto-gratis/estacion-lavado-autos_1303-22319.jpg?t=st=1727356874~exp=1727360474~hmac=178f67a18f91127f92b97b1b1312a8edc39723f349a89bf4c13dff37734f139f&w=996');
+    background-image: url(/src/assets/portada.jpg);
     background-size: cover;
     background-position: center;
+
+
+}
+
+.navbar-item img,
+.navbar-item svg {
+    max-height: unset !important;
 }
