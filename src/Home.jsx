@@ -8,8 +8,8 @@ export const Home = () => {
 
             <div className="hero-body">
                 <div className="container has-text-centered">
-                    <p className="title">¡Bienvenido a tu Autolavado Express!</p>
-                    <p className="subtitle">Tu auto limpio, mientras disfrutas de una bebida fría
+                    <p className="title has-text-grey-dark">¡Bienvenido a tu Autolavado Express!</p>
+                    <p className="subtitle has-text-grey">Tu auto limpio, mientras disfrutas de una bebida fría
                     </p>
                 </div>
             </div>
