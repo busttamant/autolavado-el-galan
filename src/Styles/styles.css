@@ -2,7 +2,7 @@
     background-image: url(/src/assets/portada.jpg);
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
 
 }
 
@@ -13,6 +13,15 @@
 
 /* Ajustes generales para móviles */
 @media (max-width: 768px) {
+
+    .custom-hero {
+        background-size: cover;
+        /* En móviles, ajusta la imagen para que se vea completamente */
+        background-position: center top;
+        /* Puedes ajustar la posición para móviles */
+        height: 80vh;
+
+    }
 
     /* Reducir el tamaño de los títulos */
     h2.title {
