@@ -10,3 +10,67 @@
 .navbar-item svg {
     max-height: unset !important;
 }
+
+/* Ajustes generales para móviles */
+@media (max-width: 768px) {
+
+    /* Reducir el tamaño de los títulos */
+    h2.title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p.content {
+        font-size: 1rem;
+    }
+
+    /* Ajustar la altura de las tarjetas para móviles */
+    .card {
+        height: auto;
+        /* Dejar que la tarjeta se ajuste automáticamente en móviles */
+    }
+
+    .card img {
+        height: 200px;
+        /* Ajustar el tamaño de las imágenes en las tarjetas */
+        object-fit: cover;
+    }
+
+    /* Reorganizar las columnas para que se apilen en móviles */
+    .columns.is-multiline .column {
+        width: 100%;
+        /* Las columnas ocuparán todo el ancho */
+    }
+
+    /* Ajustes para el texto de la sección del hero */
+    .hero-body .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-body .content p {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+
+    /* Ajustar aún más el tamaño del título en pantallas muy pequeñas */
+    h2.title {
+        font-size: 1.2rem;
+    }
+
+    /* Reducir el tamaño del texto en las tarjetas */
+    p.content {
+        font-size: 0.9rem;
+    }
+
+    /* Imágenes más pequeñas en pantallas pequeñas */
+    .card img {
+        height: 150px;
+    }
+}

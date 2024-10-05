@@ -1,4 +1,10 @@
 import React from 'react'
+import imgCarroceria from "../assets/lavado carroceria.jpg"
+import imgInterior from "../assets/lavado-interior.jpg"
+import imgMotor from "../assets/lavado-motor.jpg"
+import imgTapiceria from "../assets/lavado-tapiceria.jpg"
+import imgCompleto from "../assets/lavado-completo.jpg"
+
 
 export const Servicios = () => {
     return (
@@ -14,7 +20,7 @@ export const Servicios = () => {
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src="/src/assets/lavado carroceria.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                    <img src={imgCarroceria} style={{ objectFit: "cover", height: "300px" }} />
                                 </figure>
                             </div>
                             <div className="card-content">
@@ -32,7 +38,7 @@ export const Servicios = () => {
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src="/src/assets/lavado-interior.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                    <img src={imgInterior} style={{ objectFit: "cover", height: "300px" }} />
                                 </figure>
                             </div>
                             <div className="card-content">
@@ -49,7 +55,7 @@ export const Servicios = () => {
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src="/src/assets/lavado-motor.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                    <img src={imgMotor} style={{ objectFit: "cover", height: "300px" }} />
                                 </figure>
                             </div>
                             <div className="card-content">
@@ -71,7 +77,7 @@ export const Servicios = () => {
                             <div className="card" style={{ height: "500px" }}>
                                 <div className="card-image">
                                     <figure className="image">
-                                        <img src="/src/assets/lavado-tapiceria.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                        <img src={imgTapiceria} style={{ objectFit: "cover", height: "300px" }} />
                                     </figure>
                                 </div>
                                 <div className="card-content">
@@ -88,7 +94,7 @@ export const Servicios = () => {
                             <div className="card" style={{ height: "500px" }}>
                                 <div className="card-image">
                                     <figure className="image">
-                                        <img src="/src/assets/lavado-completo.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                        <img src={imgCompleto} style={{ objectFit: "cover", height: "300px" }} />
                                     </figure>
                                 </div>
                                 <div className="card-content">
@@ -178,3 +184,5 @@ export const Servicios = () => {
         </section>
     )
 }
+
+// importar archivos de img
