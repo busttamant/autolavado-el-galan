@@ -6,6 +6,9 @@ import imgTapiceria from "../assets/lavado-tapiceria.jpg"
 import imgCompleto from "../assets/lavado-completo.jpg"
 
 
+
+
+
 export const Servicios = () => {
     return (
         <section className="section">
