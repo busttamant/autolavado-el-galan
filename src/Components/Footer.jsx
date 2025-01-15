@@ -4,13 +4,13 @@ import '../Styles/styles.css'
 export const Footer = () => {
     return (
 
-        <footer className="footer has-background-dark has-text-white-ter">
+        <footer className="footer  background has-text-white-ter">
             <div className="container">
                 <div className="columns">
 
                     {/* Información de la empresa */}
                     <div className="column">
-                        <h2 className="title is-4 has-text-white">Autolavado El Galán</h2>
+                        <h2 className="title is-4  green">Autolavado El Galán</h2>
                         <p className="has-text-grey-light">
                             Dirección:67 C. Jose Regino Peña, Valencia 2003, Carabobo, Venezuela
                         </p>
@@ -24,7 +24,7 @@ export const Footer = () => {
 
                     {/* Redes Sociales */}
                     <div className="column">
-                        <h2 className="title is-4 has-text-white">Síguenos</h2>
+                        <h2 className="title is-4 green">Síguenos</h2>
                         <p className="has-text-grey-light">Estamos activos en nuestras redes sociales:</p>
                         <div className="buttons">
 
@@ -37,7 +37,7 @@ export const Footer = () => {
 
                     {/* Horarios */}
                     <div className="column">
-                        <h2 className="title is-4 has-text-white">Horario de Atención</h2>
+                        <h2 className="title is-4 green">Horario de Atención</h2>
                         <p className="has-text-grey-light">Lunes a Sábado: 7:30 AM - 6:00 PM</p>
                         <p className="has-text-grey-light">Domingos: 7:30 AM - 3:00 PM</p>
                         <p className="has-text-grey-light">

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img from "../assets/favicon.png";
+import img from "../assets/AUTOLAVADO .png";
+import '../Styles/font.css'; // Import the CSS file
+import '../Styles/styles.css'
 
 export const NavBar = () => {
     // Estado para manejar si el menú está activo o no
@@ -13,24 +15,15 @@ export const NavBar = () => {
 
     return (
         <div className="hero-head">
-            <nav className="navbar has-background-black-ter">
+            <nav className="navbar background">
                 <div className="container">
                     <div className="navbar-brand">
                         <Link to="/" className="navbar-item">
-                            <img width="60" height="80" src={img} alt="Logo" />
+                            <img width="60" src={img} alt="Logo" />
+
                         </Link>
-                        <p
-                            className="title has-text-centered has-text-white"
-                            style={{
-                                marginBottom: "0",
-                                lineHeight: "inherit",
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "center",
-                            }}
-                        >
-                            Autolavado El Galan
-                        </p>
+                        <span className="ml-2 is-size-3 has-text-weight-bold navbar-item font-league-gothic green navbar-texto ">AUTOLAVADO EL GALAN</span>
+
 
                         {/* Menú de hamburguesa para pantallas pequeñas */}
                         <span
@@ -45,7 +38,7 @@ export const NavBar = () => {
                     </div>
 
                     {/* Menú que se mostrará u ocultará en pantallas pequeñas */}
-                    <div id="navbarMenuHeroB" className={`navbar-menu has-background-black-ter ${isActive ? "is-active" : ""}`}>
+                    <div id="navbarMenuHeroB" className={`navbar-menu  background ${isActive ? "is-active" : ""}`}>
                         <div className="navbar-end">
                             <Link to="/" className="navbar-item has-text-white">Inicio</Link>
                             <Link to="/servicios" className="navbar-item has-text-white">Servicios</Link>
@@ -54,7 +47,7 @@ export const NavBar = () => {
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </nav >
+        </div >
     );
 };

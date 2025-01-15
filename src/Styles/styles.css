@@ -1,10 +1,34 @@
+html {
+    background-color: #1b1b2a;
+}
+
+.background {
+    background-color: #1b1b2a;
+}
+
+.background-green {
+    background-color: #b0e05e;
+}
+
+.green {
+    color: #b0e05e;
+}
+
 .custom-hero {
-    background-image: url(/src/assets/portada.jpg);
+    background-image: url(/src/assets/portada\ .jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
+
+.is-cover-image {
+    object-fit: cover;
+    height: 300px;
+}
+
+
+
 
 .navbar-item img,
 .navbar-item svg {
@@ -20,15 +44,17 @@
         background-position: center top;
         /* Puedes ajustar la posición para móviles */
         height: 80vh;
-
-
-
     }
 
     /* Reducir el tamaño de los títulos */
     h2.title {
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    .content {
+        font-size: 1.0rem;
+
     }
 
     h3 {
@@ -65,6 +91,12 @@
     .hero-body .content p {
         font-size: 1rem;
     }
+
+
+    .navbar-texto {
+        display: none !important;
+    }
+
 
 }
 

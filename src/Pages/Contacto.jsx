@@ -1,11 +1,18 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import '../Styles/styles.css'
 
 export const Contacto = () => {
     return (
-        <section className="section">
-            <div className="container has-text-centered">
-                <h1 className="title">¡Nos alegra que quieras contactarnos!</h1>
-                <p className="subtitle">
+        <motion.section className="section"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+        >
+            <div className="container has-text-centered"
+            >
+                <h1 className="title green">¡Nos alegra que quieras contactarnos!</h1>
+                <p className="subtitle has-text-white">
                     Puedes llamarnos o escribirnos por WhatsApp para agendar tu cita. Siempre estamos listos para ofrecerte el mejor servicio.
                 </p>
 
@@ -48,6 +55,6 @@ export const Contacto = () => {
 
 
             </div>
-        </section >
+        </motion.section >
     )
 }

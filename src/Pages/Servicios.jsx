@@ -1,33 +1,54 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
 import imgCarroceria from "../assets/lavado carroceria.jpg"
 import imgInterior from "../assets/lavado-interior.jpg"
 import imgMotor from "../assets/lavado-motor.jpg"
 import imgTapiceria from "../assets/lavado-tapiceria.jpg"
-import imgCompleto from "../assets/lavado-completo.jpg"
-
+import imgCompleto from "../assets/lavado carroceria.jpg"
 
 
 
 
 export const Servicios = () => {
     return (
-        <section className="section">
+        <motion.section
+            className="section "
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+        >
+
             <div className="container">
-                <h2 className="title">Nuestros Servicios:</h2>
-                <h2 className="subtitle">
-                    Todos nuestros servicios de limpieza y cuidado automotriz tienen precios ajustados según el tamaño del vehículo y el nivel de suciedad.
-                </h2>
+                <motion.h2
+                    className="title green"
+
+                >Nuestros Servicios:
+                </motion.h2>
+                <motion.h2 className="subtitle has-text-white"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.2, duration: 0.4 }}
+                >
+                    Todos nuestros servicios de limpieza y cuidado automotriz tienen precios ajustados según el tamaño del vehículo y el nivel de suciedad
+                </motion.h2>
                 <div className="columns is-multiline">
 
                     <div className="column is-one-third">
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src={imgCarroceria} style={{ objectFit: "cover", height: "300px" }} />
+                                    <img
+                                        src={imgCarroceria}
+                                        style={{ objectFit: "cover", height: "300px" }}
+                                        loading="lazy"
+                                    />
                                 </figure>
+
+
                             </div>
                             <div className="card-content">
-                                <p className="title">Lavado de Carrocería</p>
+                                <p className="title for-card">Lavado de Carrocería</p>
                                 <p className="content">
                                     Utilizamos espuma autobrillante para limpiar la carrocería, seguida de una ducha marina que deja un acabado impecable y protección adicional contra el polvo y suciedad.
                                 </p>
@@ -58,7 +79,9 @@ export const Servicios = () => {
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src={imgMotor} style={{ objectFit: "cover", height: "300px" }} />
+                                    <img src={imgMotor}
+                                        style={{ objectFit: "cover", height: "300px" }}
+                                        loading="lazy" />
                                 </figure>
                             </div>
                             <div className="card-content">
@@ -80,7 +103,9 @@ export const Servicios = () => {
                             <div className="card" style={{ height: "500px" }}>
                                 <div className="card-image">
                                     <figure className="image">
-                                        <img src={imgTapiceria} style={{ objectFit: "cover", height: "300px" }} />
+                                        <img src={imgTapiceria}
+                                            style={{ objectFit: "cover", height: "300px" }}
+                                            loading="lazy" />
                                     </figure>
                                 </div>
                                 <div className="card-content">
@@ -97,7 +122,9 @@ export const Servicios = () => {
                             <div className="card" style={{ height: "500px" }}>
                                 <div className="card-image">
                                     <figure className="image">
-                                        <img src={imgCompleto} style={{ objectFit: "cover", height: "300px" }} />
+                                        <img src={imgCompleto}
+                                            style={{ objectFit: "cover", height: "300px" }}
+                                            loading="lazy" />
                                     </figure>
                                 </div>
                                 <div className="card-content">
@@ -113,8 +140,8 @@ export const Servicios = () => {
 
                     </div>
 
-                    <section class="hero is-small has-background-black-ter	 has-text-white">
-                        <div class="hero-body">
+                    <section className="hero is-small has-background-black-ter has-text-white">
+                        <div className="hero-body">
                             <div className="content ">
                                 <h3 className='has-text-white'>Nuestros precios pueden variar dependiendo del tamaño del automóvil, la cantidad de trabajo requerido, y el tipo de limpieza o tratamiento.</h3>
                                 <p>
@@ -129,13 +156,14 @@ export const Servicios = () => {
 
 
                 {/* Sección de Productos */}
-                <h2 className="title" style={{ marginTop: '2rem' }}>Productos</h2>
+                <h2 className="title green" style={{ marginTop: '2rem' }}>Productos</h2>
                 <div className="columns is-multiline">
                     <div className="column is-one-third">
                         <div className="card" style={{ height: "500px" }}>
                             <div className="card-image">
-                                <figure className="image">
-                                    <img src="https://manobeto.com/wp-content/uploads/2022/10/BETO-low-4.jpg" style={{ objectFit: "cover", height: "300px" }} />
+                                <figure className="image ">
+                                    <img src="https://manobeto.com/wp-content/uploads/2022/10/BETO-low-4.jpg"
+                                        style={{ objectFit: "cover", height: "300px" }} />
                                 </figure>
                             </div>
                             <div className="card-content">
@@ -184,7 +212,7 @@ export const Servicios = () => {
 
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
