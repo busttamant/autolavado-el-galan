@@ -20,11 +20,11 @@ export const Servicios = () => {
         >
 
             <div className="container">
-                <motion.h2
+                <motion.h1
                     className="title green"
 
                 >Nuestros Servicios:
-                </motion.h2>
+                </motion.h1>
                 <motion.h2 className="subtitle has-text-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -48,9 +48,9 @@ export const Servicios = () => {
 
                             </div>
                             <div className="card-content">
-                                <p className="title for-card">Lavado de Carrocería</p>
+                                <div className="title for-card">Lavado de Carrocería</div>
                                 <p className="content">
-                                    Utilizamos espuma autobrillante para limpiar la carrocería, seguida de una ducha marina que deja un acabado impecable y protección adicional contra el polvo y suciedad.
+                                    Utilizamos espuma autobrillante para limpiar la carrocería,una ducha marina con acabado impecable y protección contra el polvo y suciedad.
                                 </p>
 
 

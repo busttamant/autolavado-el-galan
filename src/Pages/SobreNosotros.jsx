@@ -10,7 +10,7 @@ export const SobreNosotros = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.3 }}>
             <div className="container">
-                <h2 className="title green">Sobre Nosotros</h2>
+                <h3 className="title green font-size">Sobre Nosotros</h3>
                 <h3>
                     <strong className='has-text-white'>Bienvenidos a Autolavado El Galán</strong>
                 </h3>
@@ -22,7 +22,7 @@ export const SobreNosotros = () => {
                 </p>
                 <br />
 
-                <h3 className="title is-5 green">¿Por qué elegirnos?</h3>
+                <h3 className="title green font-size">¿Por qué elegirnos?</h3>
                 <ul>
                     <li className='has-text-white'><strong className='green'>Experiencia:</strong> Con más de 9 años en el sector, sabemos cómo tratar cada tipo de vehículo y abordar cualquier tipo de suciedad o mancha.</li>
                     <li className='has-text-white'><strong className='green'>Compromiso con la Calidad:</strong> Nos esforzamos por superar las expectativas de nuestros clientes, ofreciendo un servicio personalizado y adaptado a sus necesidades.</li>
@@ -30,12 +30,12 @@ export const SobreNosotros = () => {
                     <li className='has-text-white'><strong className='green'>Apertura a la Crítica:</strong> Valoramos las opiniones de nuestros clientes y estamos siempre dispuestos a mejorar nuestros servicios basándonos en su retroalimentación.</li>
                 </ul>
                 <br />
-                <h3 className="title is-5 green">Nuestra Misión</h3>
+                <h3 className="title green font-size">Nuestra Misión</h3>
                 <p className='has-text-white'>
                     Nuestra misión es proporcionar un servicio excepcional que no solo limpie, sino que también cuide y proteja tu vehículo. Nos alegra que consideres confiar en nosotros para mantener tu auto en las mejores condiciones. Tu satisfacción es nuestra prioridad.
                 </p>
                 <br />
-                <h3 className="title is-5 green">Contáctanos</h3>
+                <h3 className="title  green font-size">Contáctanos</h3>
                 <p className='has-text-white'>
                     Estamos aquí para ayudarte. No dudes en llamarnos o visitar nuestras instalaciones para conocer más sobre nuestros servicios. ¡Esperamos verte pronto!
                 </p>

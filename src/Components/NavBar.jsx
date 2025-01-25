@@ -13,6 +13,11 @@ export const NavBar = () => {
         setIsActive(!isActive);
     };
 
+    // Función para cerrar el menú al hacer clic en un enlace
+    const closeNavbar = () => {
+        setIsActive(false);
+    };
+
     return (
         <div className="hero-head">
             <nav className="navbar background">
@@ -40,10 +45,22 @@ export const NavBar = () => {
                     {/* Menú que se mostrará u ocultará en pantallas pequeñas */}
                     <div id="navbarMenuHeroB" className={`navbar-menu  background ${isActive ? "is-active" : ""}`}>
                         <div className="navbar-end">
-                            <Link to="/" className="navbar-item has-text-white">Inicio</Link>
-                            <Link to="/servicios" className="navbar-item has-text-white">Servicios</Link>
-                            <Link to="/contacto" className="navbar-item has-text-white">Contacto</Link>
-                            <Link to="/sobreNosotros" className="navbar-item has-text-white">Sobre nosotros</Link>
+                            <Link
+                                to="/"
+                                className="navbar-item has-text-white"
+                                onClick={closeNavbar}>Inicio</Link>
+                            <Link
+                                to="/servicios"
+                                className="navbar-item has-text-white"
+                                onClick={closeNavbar}
+                            >Servicios</Link>
+                            <Link
+                                to="/contacto"
+                                className="navbar-item has-text-white"
+                                onClick={closeNavbar}>Contacto</Link>
+                            <Link
+                                to="/sobreNosotros" className="navbar-item has-text-white"
+                                onClick={closeNavbar}>Sobre nosotros</Link>
                         </div>
                     </div>
                 </div>

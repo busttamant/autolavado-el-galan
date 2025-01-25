@@ -2,33 +2,26 @@ html {
     background-color: #1b1b2a;
 }
 
-.background {
-    background-color: #1b1b2a;
+
+.home-background {
+    background-image: url(/src/assets/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.background-green {
-    background-color: #b0e05e;
+.background {
+    background-color: #1b1b2a;
 }
 
 .green {
     color: #b0e05e;
 }
 
-.custom-hero {
-    background-image: url(/src/assets/portada\ .jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.is-cover-image {
+.´üis-cover-image {
     object-fit: cover;
     height: 300px;
 }
-
-
-
 
 .navbar-item img,
 .navbar-item svg {
@@ -37,85 +30,107 @@ html {
 
 /* Ajustes generales para móviles */
 @media (max-width: 768px) {
-
-    .custom-hero {
+    .home-background {
         background-size: cover;
-        /* En móviles, ajusta la imagen para que se vea completamente */
         background-position: center top;
-        /* Puedes ajustar la posición para móviles */
-        height: 80vh;
+        height: 70vh;
+        /* Ajustado para que no sea demasiado alto */
     }
 
-    /* Reducir el tamaño de los títulos */
     h2.title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
-    .content {
-        font-size: 1.0rem;
+    .card1 {
+        width: auto;
+    }
 
+    .font-size {
+        font-size: 1.6rem !important;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        /* Tamaño más compacto */
     }
 
     p.content {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        /* Reducir tamaño del párrafo */
     }
 
-    /* Ajustar la altura de las tarjetas para móviles */
     .card {
         height: auto;
-        /* Dejar que la tarjeta se ajuste automáticamente en móviles */
     }
 
     .card img {
-        height: 200px;
-        /* Ajustar el tamaño de las imágenes en las tarjetas */
+        height: auto;
+        /* Ajustar tamaño de las imágenes */
         object-fit: cover;
     }
 
-    /* Reorganizar las columnas para que se apilen en móviles */
-    .columns.is-multiline .column {
-        width: 100%;
-        /* Las columnas ocuparán todo el ancho */
+    .content h3 {
+        font-size: 1.2rem;
     }
 
-    /* Ajustes para el texto de la sección del hero */
-    .hero-body .content h3 {
-        font-size: 1.3rem;
+    .content p {
+        font-size: 0.9rem;
     }
-
-    .hero-body .content p {
-        font-size: 1rem;
-    }
-
 
     .navbar-texto {
         display: none !important;
     }
 
-
+    .home-h2 {
+        display: none;
+    }
 }
-
 
 /* Ajustes para pantallas aún más pequeñas */
 @media (max-width: 480px) {
+    h1.title {
+        font-size: 1.5rem;
+    }
 
-    /* Ajustar aún más el tamaño del título en pantallas muy pequeñas */
     h2.title {
+        font-size: 1.2rem;
+        /* Más pequeño en pantallas muy pequeñas */
+    }
+
+    .content {
+        font-size: 1rem;
+        /* Reducir aún más el texto */
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        /* Títulos más pequeños */
+    }
+
+    p.title {
+        font-size: 1.5rem;
+    }
+
+    p.subtitle {
         font-size: 1.2rem;
     }
 
-    /* Reducir el tamaño del texto en las tarjetas */
     p.content {
         font-size: 0.9rem;
     }
 
-    /* Imágenes más pequeñas en pantallas pequeñas */
     .card img {
-        height: 150px;
+        height: 140px;
+        /* Imágenes más pequeñas */
+    }
+
+    .for-card {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .home-h2 {
+        display: none;
     }
 }
